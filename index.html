@@ -51,8 +51,15 @@
                 class="btn location-btn">
                 <i class="fa-solid fa-location-dot"></i> Get Location
             </a>
-        </div>
 
+            <!-- LANGUAGE BUTTONS YAHAN -->
+            <div class="language-buttons">
+                <button type="button" id="hindiBtn" onclick="changeLanguage('en')">English</button>
+
+                <button type="button" id="englishBtn" onclick="changeLanguage('hi')">hindi</button>
+            </div>
+        </div>
+              
     </div>
 
     <nav class="navbar">
@@ -189,7 +196,7 @@
         <div class="village">📍 Maheshra</div>
         <div class="village">📍 Majri</div>
         <div class="village">📍 Jhokhawas</div>
-        
+        <div class="village">📍 Khatopur</div>
 
     </div>
 
@@ -223,7 +230,7 @@
         <div class="service-card">
             <div class="service-icon">🌬️</div>
             <h3>Cooler Winding</h3>
-            <div class="service-price">₹600</div>
+            <div class="service-price">₹550 - ₹600</div>
             <p>Cooler motor winding service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -239,7 +246,7 @@
         <div class="service-card">
             <div class="service-icon">🧹</div>
             <h3>Cooler Service</h3>
-            <div class="service-price">₹200</div>
+            <div class="service-price">₹150 - ₹200</div>
             <p>General cooler servicing.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -247,7 +254,7 @@
         <div class="service-card">
             <div class="service-icon">🌀</div>
             <h3>Ceiling Fan Repair</h3>
-            <div class="service-price">₹300</div>
+            <div class="service-price">₹250 - ₹300</div>
             <p>Ceiling fan repair service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -271,7 +278,7 @@
         <div class="service-card">
             <div class="service-icon">🧺</div>
             <h3>Washing Machine Service</h3>
-            <div class="service-price">₹200</div>
+            <div class="service-price">₹150 - ₹200</div>
             <p>General washing machine service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -287,7 +294,7 @@
         <div class="service-card">
             <div class="service-icon">❄️</div>
             <h3>Refrigerator Service</h3>
-            <div class="service-price">₹200</div>
+            <div class="service-price">₹150 - ₹200</div>
             <p>Refrigerator general service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -295,7 +302,7 @@
         <div class="service-card">
             <div class="service-icon">🔌</div>
             <h3>Fridge Relay</h3>
-            <div class="service-price">₹400</div>
+            <div class="service-price">₹350- ₹400</div>
             <p>Relay replacement service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -303,7 +310,7 @@
         <div class="service-card">
             <div class="service-icon">⚙️</div>
             <h3>Fridge Compressor</h3>
-            <div class="service-price">₹4,000</div>
+            <div class="service-price">  ₹3500- ₹4,000</div>
             <p>Compressor replacement.</p>
             <a href="#booking" class="book-service">Book This Service</a>
         </div>
@@ -353,7 +360,7 @@
                 <tr>
                     <td>Cooler Winding</td>
                     <td>Motor Winding</td>
-                    <td>₹600</td>
+                    <td> ₹550 - ₹600</td>
                 </tr>
 
                 <tr>
@@ -365,13 +372,13 @@
                 <tr>
                     <td>Cooler Service</td>
                     <td>General Servicing</td>
-                    <td>₹200</td>
+                    <td> ₹150 - ₹200</td>
                 </tr>
 
                 <tr>
                     <td>Ceiling Fan</td>
                     <td>Repair Charge</td>
-                    <td>₹300</td>
+                    <td>₹250 - ₹300</td>
                 </tr>
 
                 <tr>
@@ -389,7 +396,7 @@
                 <tr>
                     <td>Washing Machine</td>
                     <td>Service Charge</td>
-                    <td>₹200</td>
+                    <td>₹150 - ₹200</td>
                 </tr>
 
                 <tr>
@@ -401,19 +408,19 @@
                 <tr>
                     <td>Refrigerator</td>
                     <td>Service Charge</td>
-                    <td>₹200</td>
+                    <td>₹150 - ₹200</td>
                 </tr>
 
                 <tr>
                     <td>Fridge Relay</td>
                     <td>Relay Replacement</td>
-                    <td>₹400</td>
+                    <td>₹350 - ₹400</td>
                 </tr>
 
                 <tr>
                     <td>Fridge Compressor</td>
                     <td>Compressor Replacement</td>
-                    <td>₹4,000</td>
+                    <td>₹3500 - ₹4,000</td>
                 </tr>
 
                 <tr>
@@ -597,6 +604,7 @@
                 <option>Maheshra</option>
                 <option>Majri</option>
                 <option>Jhokhawas</option>
+                <option>Khatopur</option>
 
             </select>
 
@@ -1081,6 +1089,7 @@
             <p>Maheshra</p>
             <p>Majri</p>
             <p>Jhokhawas</p>
+            <p>khatopur</p>
 
         </div>
 
@@ -1186,7 +1195,8 @@ form.addEventListener("submit", function(event) {
         "Karoli",
         "Maheshra",
         "Majri",
-        "Jhokhawas"
+        "Jhokhawas",
+        "Khatopur"
     ];
 
     if (!approvedVillages.includes(village)) {
@@ -1213,7 +1223,7 @@ Preferred Visit Time: ${time}
 
 I understand and accept the ₹149 home visit checking charge policy.
 
-I confirm that my selected village is within the listed service area.
+I confirm that my selected village is within the listed service area. 
 
 Please contact me regarding my service request.
 
@@ -1265,6 +1275,67 @@ serviceButtons.forEach(function(button) {
 
     });
 
+});
+
+// ==================== LANGUAGE SWITCH =============
+
+const translations = {
+    hi: {
+        "Call Now": "Abhi phone karein",
+        "Whatsapp": "Whatsapp",
+        "Get Location": "Jagah dekhein",
+        "Price List": "Rate List",
+        "Service Area": "Seva ka ilaka",
+        "Visit Policy": "Ghar aane ki jankari",
+        "Book Service": "Service book  karein",
+        "Guarantee": "Guarantee",
+        "Contact": "Sampark karein",
+        "Owner": "Maalik",
+        "Village": "Gaon",
+        "15+ Years Experience": "15 saal se zyada ka anubhav"
+    },
+
+    en: {
+        "Abhi phone karein": "Call Now",
+        "Whatsapp": "Whatsapp",
+        "Jagah dekhein": "Get Location",
+        "Rate List": "Price List",
+        "Seva ka ilaka": "Service Area",
+        "Ghar aane ki jankari": "Visit Policy",
+        "Service book  karein": "Book Service" ,
+        "Guarantee": "Guarantee",
+        "Sampark karein": "Contact",
+        "Maalik" :  "Owner",
+        "Gaon":  "Village",
+        "15 saal se zyada ka anubhav": "15+ Years Experience" 
+    }
+};
+    
+function changeLanguage(lang) {
+
+    if (!translations[lang]) return;
+
+    document.querySelectorAll("body *").forEach(function(element) {
+
+        if(element.children.length === 0 && element.textContent.trim() !== '') {
+          
+            let text = element.textContent.trim();
+
+            
+        if (translations[lang][text]) {
+            element.textContent = translations[lang][text];
+        }
+     }
+  });
+
+}
+
+document.getElementById("hindiBtn")?.addEventListener("click", function () {
+    // alert("Hindi button working");
+});
+
+document.getElementById("englishBtn")?.addEventListener("click", function () {
+    // alert("English button working");
 });
 
 </script>
