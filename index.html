@@ -40,10 +40,12 @@
                 <i class="fa-solid fa-phone"></i> Call Now
             </a>
 
-            <a href="https://wa.me/919660668492" target="_blank"
-                class="btn whatsapp-btn">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-            </a>
+
+<a href="#" id="whatsappBtn" class="btn whatsapp-btn" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+            
 
             <!-- EXACT GOOGLE MAP ONLY IN HEADER -->
             <a href="https://maps.app.goo.gl/XyvJGb9zD6vXRgJi6"
@@ -301,7 +303,7 @@
 
         <div class="service-card">
             <div class="service-icon">🔌</div>
-            <h3>Fridge Relay</h3>
+            <h3>Refrigrator Relay</h3>
             <div class="service-price">₹350- ₹400</div>
             <p>Relay replacement service.</p>
             <a href="#booking" class="book-service">Book This Service</a>
@@ -309,7 +311,7 @@
 
         <div class="service-card">
             <div class="service-icon">⚙️</div>
-            <h3>Fridge Compressor</h3>
+            <h3>Refrigrator Compressor</h3>
             <div class="service-price">  ₹3500- ₹4,000</div>
             <p>Compressor replacement.</p>
             <a href="#booking" class="book-service">Book This Service</a>
@@ -1310,7 +1312,7 @@ const translations = {
         "15 saal se zyada ka anubhav": "15+ Years Experience" 
     }
 };
-    
+   
 function changeLanguage(lang) {
 
     if (!translations[lang]) return;
@@ -1339,6 +1341,26 @@ document.getElementById("englishBtn")?.addEventListener("click", function () {
 });
 
 </script>
+
+
+
+<script>
+    const whatsappBtn = document.getElementById("whatsappBtn");
+
+    const message = "Hello, mujhe aapki service ke baare mein jankari chahiye.";
+
+    const whatsappURL = "https://wa.me/919660668492?" + 
+                        new URLSearchParams({
+                            text: message
+                        }).toString();
+
+    whatsappBtn.href = whatsappURL;
+</script>
+
+
+
+
+
 
 </body>
 </html>
